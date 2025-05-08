@@ -5,6 +5,37 @@ pip install pandas
 pip install matplotlib
 pip install flask
 
+def graficarlineas() :
+    # Crear gráfico de líneas
+    plt.plot(ColumnaAÑO, ColumnaPC, marker="o", color="green", linestyle="--")
+    plt.title("Consumidores de empanadas al año")
+    plt.xlabel("Año")
+    plt.ylabel("Consumidores")
+    plt.show()
+
+    plt.plot(ColumnaAÑO, ColumnaSMARTPHONE, marker="o", color="green", linestyle="--")
+    plt.title("SMARTPHONE conectados a wifi por Año")
+    plt.xlabel("Año")
+    plt.ylabel("Personas")
+    plt.show()
+
+    plt.plot(ColumnaAÑO, ColumnaTABLET, marker="o", color="green", linestyle="--")
+    plt.title("TABLETS conectados a wifi por Año")  
+    plt.xlabel("Año")
+    plt.ylabel("Personas")
+    plt.show()
+
+    plt.plot(ColumnaAÑO, ColumnaOTRO, marker="o", color="green", linestyle="--")
+    plt.title("OTROS conectados a wifi por Año")    
+    plt.xlabel("Año")
+    plt.ylabel("Personas")
+    plt.show()
+
+    plt.plot(ColumnaAÑO, ColumnaZONAWIFI, marker="o", color="green", linestyle="--")
+    plt.title("ZONAS WIFI conectados a wifi por Año")
+    plt.xlabel("Año")
+    plt.ylabel("Personas")
+    plt.show()
 
 Escriba el código aquí Camilo
 """
@@ -228,3 +259,4 @@ def graficarHistograma():
 #graficarBarras()
 #graficarDispersion()
 #graficarHistograma()
+graficarlineas()
